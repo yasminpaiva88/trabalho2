@@ -1,0 +1,101 @@
+/* Estilos principais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Legenda */
+  .legend ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .legend li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  .status {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .available {
+    background-color: #2ecc71; /* verde */
+  }
+  
+  .almost-full {
+    background-color: #f39c12; /* laranja */
+  }
+  
+  .full {
+    background-color: #e74c3c; /* vermelho */
+  }
+  
+  /* Cartões dos pontos */
+  .parking-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .point {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-left: 10px solid transparent;
+  }
+  
+  .point.available {
+    border-color: #2ecc71;
+  }
+  
+  .point.almost-full {
+    border-color: #f39c12;
+  }
+  
+  .point.full {
+    border-color: #e74c3c;
+  }
+  
+  .point h3 {
+    margin-top: 0;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+  
+    .point {
+      background-color: #1e1e1e;
+    }
+  
+    header, footer {
+      background-color: #001f3f;
+    }
+  }
+  
